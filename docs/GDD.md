@@ -36,3 +36,4 @@ Each stage have 3 upgrades, but the last one is basically winning the game:
 10. C1
 
 Pixel art
+Doing more pixel art
