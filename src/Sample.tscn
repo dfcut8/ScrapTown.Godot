@@ -30,7 +30,7 @@ position = Vector2(160, 101)
 texture = ExtResource("1_cpijt")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=22316340]
-position = Vector2(118, 84)
+position = Vector2(161, 111)
 texture = ExtResource("2_iuf4w")
 region_enabled = true
 region_rect = Rect2(89, 103, 38, 25)
