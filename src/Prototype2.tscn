@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://bwmb732mhlgv7"]
+
+[node name="Prototype2" type="Node2D" unique_id=2011430838]
+
+[node name="UpHUD" type="Control" parent="." unique_id=1290819070]
+custom_minimum_size = Vector2(0, 8)
+layout_mode = 3
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+size_flags_horizontal = 3
+
+[node name="Panel" type="Panel" parent="UpHUD" unique_id=1708994001]
+custom_minimum_size = Vector2(0, 8)
+layout_mode = 0
+offset_bottom = 8.0
+
+[node name="Label" type="Label" parent="UpHUD/Panel" unique_id=510012439]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_right = 80.0
+offset_bottom = 23.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 6
+text = "fdfadfadsf"

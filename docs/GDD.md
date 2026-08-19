@@ -37,3 +37,4 @@ Each stage have 3 upgrades, but the last one is basically winning the game:
 
 Breaking down the tasks:
 Experiment with main layout/screen
+I think for now I'll go with just doing a prototype in asesprite to understand how it should work. Or... maybe I'm fine with doing it in actual godot instance...
