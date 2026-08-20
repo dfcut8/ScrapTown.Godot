@@ -30,6 +30,8 @@ Just a cursor, so we can mouse over the building.
 Player mouse over the building. Building highlights. Hint shown "click to upgrade". Player must click a building to upgrade it . On clicking will open a separate ui area with confirmation to upgrade.
 When upgrade is confirmed, we need to replace current sprite with upgraded one.
 
+How to implement highlighting. Two ideas, either it should be outline, or should be just something base style.
+
 ### Tile map
 
 Technically we do not need it yet...

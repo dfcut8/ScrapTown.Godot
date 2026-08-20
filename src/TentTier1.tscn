@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://c7rc0j47miujm"]
+
+[ext_resource type="Texture2D" uid="uid://cmwggp41tyrgm" path="res://Assets/Textures/Objects/TentVer002.png" id="1_4s1am"]
+
+[node name="TentTier1" type="Node2D" unique_id=604439264]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=899715099]
+texture = ExtResource("1_4s1am")
+region_enabled = true
+region_rect = Rect2(0, 0, 24, 24)
