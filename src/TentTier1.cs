@@ -17,13 +17,15 @@ public partial class TentTier1 : Node2D
     private void OnMouseExited()
     {
         GD.Print("Tent: MouseExited!!!");
-        sprite.Modulate = Colors.White;
+        //sprite.Modulate = Colors.White;
+        sprite.SetInstanceShaderParameter("effect_enabled", false);
     }
 
     private void OnMouseEntered()
     {
         GD.Print("Tent: MouseEntered!!!");
-        sprite.Modulate = Colors.Red;
+        //sprite.Modulate = Colors.Red;
+        sprite.SetInstanceShaderParameter("effect_enabled", true);
     }
 
     public override void _Process(double delta) { }
