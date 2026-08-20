@@ -38,7 +38,7 @@ Technically we do not need it yet...
 
 We need at least the following:
 
-1. Housing (to increase our available housing
+1. Housing (to increase our available housing)
 2. Green house (to increase food production)
 3. Exchange center (to increase scrap production) TODO: need to think about better naming
 
