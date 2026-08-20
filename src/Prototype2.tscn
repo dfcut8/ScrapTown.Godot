@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://bwmb732mhlgv7"]
 
+[ext_resource type="FontFile" uid="uid://ck78wbo5v4h4e" path="res://Assets/Fonts/retro-pixel-petty-5h.ttf" id="1_5dpi8"]
+
 [node name="Prototype2" type="Node2D" unique_id=2011430838]
 
 [node name="UpHUD" type="Control" parent="." unique_id=1290819070]
@@ -22,5 +24,9 @@ anchor_right = 1.0
 offset_right = 80.0
 offset_bottom = 23.0
 grow_horizontal = 2
-theme_override_font_sizes/font_size = 6
-text = "fdfadfadsf"
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0)
+theme_override_fonts/font = ExtResource("1_5dpi8")
+theme_override_font_sizes/font_size = 5
+text = "TESTING TEST"
+autowrap_trim_flags = 64
+justification_flags = 160
