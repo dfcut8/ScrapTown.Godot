@@ -14,19 +14,28 @@ public partial class TentTier1 : Node2D
         area.MouseExited += OnMouseExited;
     }
 
+
+    public override void _Process(double delta) { }
+
+    public override void _UnhandledInput(InputEvent @event)
+    {
+        if (@event is InputEventMouseButton mouseEvent)
+        {
+            if (mouseEvent.ButtonIndex == MouseButton.Left)
+            {
+                GD.Print("Tent: Left Mouse Clicked!!!");
+            }
+        }
+    }
     private void OnMouseExited()
     {
         GD.Print("Tent: MouseExited!!!");
-        //sprite.Modulate = Colors.White;
         sprite.SetInstanceShaderParameter("effect_enabled", false);
     }
 
     private void OnMouseEntered()
     {
         GD.Print("Tent: MouseEntered!!!");
-        //sprite.Modulate = Colors.Red;
         sprite.SetInstanceShaderParameter("effect_enabled", true);
     }
-
-    public override void _Process(double delta) { }
 }

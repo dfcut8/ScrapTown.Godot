@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://c4u03i6j53qno"]
+
+[ext_resource type="Script" uid="uid://cv7ge63je2qrg" path="res://TentTier1.cs" id="1_o2tle"]
+[ext_resource type="Shader" uid="uid://86a5bax0tdpa" path="res://TentTier1.gdshader" id="2_6em7s"]
+[ext_resource type="Texture2D" uid="uid://cmwggp41tyrgm" path="res://Assets/Textures/Objects/TentVer002.png" id="3_4ijs2"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_uklnj"]
+shader = ExtResource("2_6em7s")
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/blink_color = Color(1, 1, 1, 1)
+shader_parameter/blink_time_scale = 0.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4s1am"]
+size = Vector2(24, 24)
+
+[node name="TentTier1" type="Node2D" unique_id=604439264]
+script = ExtResource("1_o2tle")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=899715099]
+unique_name_in_owner = true
+material = SubResource("ShaderMaterial_uklnj")
+texture = ExtResource("3_4ijs2")
+region_enabled = true
+region_rect = Rect2(47, 0, 25, 25)
+
+[node name="Area2D" type="Area2D" parent="." unique_id=82704425]
+unique_name_in_owner = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=148880754]
+shape = SubResource("RectangleShape2D_4s1am")
