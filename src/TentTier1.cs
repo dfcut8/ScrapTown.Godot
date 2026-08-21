@@ -12,21 +12,21 @@ public partial class TentTier1 : Node2D
         sprite = GetNode<Sprite2D>("%Sprite2D");
         area.MouseEntered += OnMouseEntered;
         area.MouseExited += OnMouseExited;
+        area.InputEvent += OnInputEvent;
     }
-
-
     public override void _Process(double delta) { }
 
-    public override void _UnhandledInput(InputEvent @event)
+    private void OnInputEvent(Node viewport, InputEvent @event, long shapeIdx)
     {
         if (@event is InputEventMouseButton mouseEvent)
         {
-            if (mouseEvent.ButtonIndex == MouseButton.Left)
+            if (mouseEvent.ButtonIndex == MouseButton.Left && mouseEvent.Pressed)
             {
-                GD.Print("Tent: Left Mouse Clicked!!!");
+                GD.Print($"Tent ({Name}): Left Mouse Clicked!!!");
             }
         }
     }
+
     private void OnMouseExited()
     {
         GD.Print("Tent: MouseExited!!!");
