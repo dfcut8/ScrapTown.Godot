@@ -1,4 +1,5 @@
 using Godot;
+using ScrapTown.Godot;
 
 public partial class InputManager : Node2D
 {
@@ -17,13 +18,13 @@ public partial class InputManager : Node2D
                     Vector2 worldPosition = GetGlobalMousePosition();
                     GD.Print($"world position: {worldPosition}");
                     var selectedObject = GetSelectedUnit(worldPosition);
-                    GD.Print($"clicked on: {selectedObject.Name}");
+                    selectedObject.Select();
                 }
             }
         }
     }
 
-    private TentTier1 GetSelectedUnit(Vector2 position)
+    private ISelectable GetSelectedUnit(Vector2 position)
     {
         var spaceState = GetWorld2D().DirectSpaceState;
         if (spaceState is null)
@@ -39,9 +40,16 @@ public partial class InputManager : Node2D
         };
 
         var intersections = spaceState.IntersectPoint(query, 1);
+        var component =
+            intersections.Count > 0
+                ? intersections[0]["collider"].AsGodotObject() as MouseSelectionComponent
+                : null;
 
-        return intersections.Count > 0
-            ? intersections[0]["collider"].AsGodotObject() as TentTier1
-            : null;
+        if (component == null)
+        {
+            return null;
+        }
+
+        return component.Parent;
     }
 }

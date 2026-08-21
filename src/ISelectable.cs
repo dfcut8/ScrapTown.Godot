@@ -1,6 +1,7 @@
 namespace ScrapTown.Godot;
 
-internal interface ISelectable
+public interface ISelectable
 {
     public void Select();
+    public void Deselect();
 }

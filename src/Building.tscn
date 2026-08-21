@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://iy83e4ff1id2"]
+
+[ext_resource type="Script" uid="uid://bui3qktmeofje" path="res://Building.cs" id="1_e37n3"]
+[ext_resource type="PackedScene" uid="uid://chpoobj8xdyq0" path="res://MouseSelectionComponent.tscn" id="2_v8dyh"]
+[ext_resource type="Texture2D" uid="uid://cmwggp41tyrgm" path="res://Assets/Textures/Objects/TentVer002.png" id="3_pe7t1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pe7t1"]
+
+[node name="Building" type="Node2D" unique_id=879076115]
+script = ExtResource("1_e37n3")
+
+[node name="MouseSelectionComponent" parent="." unique_id=161946656 instance=ExtResource("2_v8dyh")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MouseSelectionComponent" unique_id=744258749]
+shape = SubResource("RectangleShape2D_pe7t1")
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1424678100]
+texture = ExtResource("3_pe7t1")
+region_enabled = true
+region_rect = Rect2(0, 0, 24, 24)

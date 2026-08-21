@@ -13,7 +13,7 @@ shader_parameter/blink_time_scale = 0.0
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4s1am"]
 size = Vector2(24, 24)
 
-[node name="TentTier1" type="Node2D" unique_id=604439264]
+[node name="Building" type="Node2D" unique_id=604439264]
 script = ExtResource("1_uklnj")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=899715099]

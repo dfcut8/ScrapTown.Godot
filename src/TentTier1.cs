@@ -1,15 +1,16 @@
 using Godot;
 
-public partial class Building : Area2D
+public partial class TentTier1 : Node2D
 {
+    private Area2D area;
     private Sprite2D sprite;
 
     public override void _Ready()
     {
-        //area = GetNode<Area2D>("%Area2D");
-        //sprite = GetNode<Sprite2D>("%Sprite2D");
-        MouseEntered += OnMouseEntered;
-        MouseExited += OnMouseExited;
+        area = GetNode<Area2D>("%Area2D");
+        sprite = GetNode<Sprite2D>("%Sprite2D");
+        area.MouseEntered += OnMouseEntered;
+        area.MouseExited += OnMouseExited;
         //area.InputEvent += OnInputEvent;
     }
 

@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://c7rc0j47miujm" path="res://TentTier1.tscn" id="5_mp81a"]
 [ext_resource type="PackedScene" uid="uid://dbac3hv1i3qc" path="res://TentTier2.tscn" id="6_ygus8"]
 [ext_resource type="PackedScene" uid="uid://c4u03i6j53qno" path="res://TentTier3.tscn" id="7_l4vtk"]
+[ext_resource type="PackedScene" uid="uid://iy83e4ff1id2" path="res://Building.tscn" id="9_l51m6"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5dpi8"]
 bg_color = Color(0.39536718, 0.3953672, 0.39536706, 1)
@@ -2010,3 +2011,6 @@ position = Vector2(127, 115)
 
 [node name="TentTier3" parent="TileMapLayer" unique_id=1578056600 instance=ExtResource("7_l4vtk")]
 position = Vector2(221, 114)
+
+[node name="Building" parent="TileMapLayer" unique_id=879076115 instance=ExtResource("9_l51m6")]
+position = Vector2(300, 28)
