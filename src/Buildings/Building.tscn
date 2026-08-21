@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://iy83e4ff1id2"]
 
-[ext_resource type="Script" uid="uid://bui3qktmeofje" path="res://Building.cs" id="1_e37n3"]
-[ext_resource type="PackedScene" uid="uid://chpoobj8xdyq0" path="res://MouseSelectionComponent.tscn" id="2_v8dyh"]
+[ext_resource type="Script" uid="uid://bui3qktmeofje" path="res://Buildings/Building.cs" id="1_e37n3"]
+[ext_resource type="PackedScene" uid="uid://chpoobj8xdyq0" path="res://Components/MouseSelectionComponent.tscn" id="2_v8dyh"]
 [ext_resource type="Texture2D" uid="uid://cmwggp41tyrgm" path="res://Assets/Textures/Objects/TentVer002.png" id="3_pe7t1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pe7t1"]
