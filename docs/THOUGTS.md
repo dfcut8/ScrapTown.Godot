@@ -45,3 +45,9 @@ We need at least the following:
 3. Exchange center (to increase scrap production) TODO: need to think about better naming
 
 TODO: Not clear what upgrade will do. Need to brainstorm.
+
+## Ideas
+
+Do we even need a graphics in normal way of thinking about it? What if we just use a ASCII pseudo-graphics to represent everything.
+
+I also think about using more older style ui as it was in KOEI games or in old DOS games. See "Reunion" for reference. Idea is that everything will be done in dedicated ui panel instead of popups, etc... However this will mean, we are not using modern ux patterns.
