@@ -33,7 +33,7 @@ public partial class InputManager : Node2D
 
         var query = new PhysicsPointQueryParameters2D
         {
-            Position = GetGlobalMousePosition(),
+            Position = position,
             CollideWithAreas = true,
             CollideWithBodies = false,
         };
