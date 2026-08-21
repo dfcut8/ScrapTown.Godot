@@ -17,13 +17,13 @@ public partial class InputManager : Node2D
                     Vector2 worldPosition = GetGlobalMousePosition();
                     GD.Print($"world position: {worldPosition}");
                     var selectedObject = GetSelectedUnit(worldPosition);
-                    GD.Print($"clicked on: {selectedObject}");
+                    GD.Print($"clicked on: {selectedObject.Name}");
                 }
             }
         }
     }
 
-    private GodotObject GetSelectedUnit(Vector2 position)
+    private TentTier1 GetSelectedUnit(Vector2 position)
     {
         var spaceState = GetWorld2D().DirectSpaceState;
         if (spaceState is null)
@@ -41,7 +41,7 @@ public partial class InputManager : Node2D
         var intersections = spaceState.IntersectPoint(query, 1);
 
         return intersections.Count > 0
-            ? intersections[0]["collider"].AsGodotObject() // as Area2D
+            ? intersections[0]["collider"].AsGodotObject() as TentTier1
             : null;
     }
 }
