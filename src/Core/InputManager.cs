@@ -1,5 +1,7 @@
 using Godot;
-using ScrapTown.Godot;
+using ScrapTown.Godot.Components;
+
+namespace ScrapTown.Godot.Core;
 
 public partial class InputManager : Node2D
 {

@@ -1,6 +1,7 @@
 using Godot;
+using ScrapTown.Godot.Core;
 
-namespace ScrapTown.Godot;
+namespace ScrapTown.Godot.Buildings;
 
 public partial class Building : Node2D, ISelectable
 {

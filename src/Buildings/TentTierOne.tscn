@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://be45qwg6h1clq"]
+
+[ext_resource type="PackedScene" uid="uid://iy83e4ff1id2" path="res://Buildings/Building.tscn" id="1_mkuki"]
+
+[node name="TentTierOne" unique_id=879076115 instance=ExtResource("1_mkuki")]

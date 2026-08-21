@@ -1,4 +1,4 @@
-namespace ScrapTown.Godot;
+namespace ScrapTown.Godot.Core;
 
 public interface ISelectable
 {

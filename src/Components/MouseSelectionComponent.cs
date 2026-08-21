@@ -1,6 +1,7 @@
 using Godot;
+using ScrapTown.Godot.Core;
 
-namespace ScrapTown.Godot;
+namespace ScrapTown.Godot.Components;
 
 public partial class MouseSelectionComponent : Area2D
 {

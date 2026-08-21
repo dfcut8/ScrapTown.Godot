@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://vwyj085m8g7y"]
+
+[ext_resource type="PackedScene" uid="uid://xi4upsqa3ta5" path="res://Core/InputManager.tscn" id="1_acdnu"]
+[ext_resource type="PackedScene" uid="uid://be45qwg6h1clq" path="res://Buildings/TentTierOne.tscn" id="2_q1cbv"]
+
+[node name="Level" type="Node2D" unique_id=177891381]
+
+[node name="InputManager" parent="." unique_id=1506098429 instance=ExtResource("1_acdnu")]
+
+[node name="TentTierOne" parent="." unique_id=879076115 instance=ExtResource("2_q1cbv")]
+position = Vector2(151, 112)
