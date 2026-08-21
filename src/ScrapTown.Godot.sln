@@ -1,12 +1,15 @@
-﻿Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.9.12112.369 stable
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScrapTown.Godot", "ScrapTown.Godot.csproj", "{1F547EB1-9109-41BE-B00E-E5BF95200331}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-	Debug|Any CPU = Debug|Any CPU
-	ExportDebug|Any CPU = ExportDebug|Any CPU
-	ExportRelease|Any CPU = ExportRelease|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		ExportDebug|Any CPU = ExportDebug|Any CPU
+		ExportRelease|Any CPU = ExportRelease|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{1F547EB1-9109-41BE-B00E-E5BF95200331}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -15,5 +18,8 @@ Global
 		{1F547EB1-9109-41BE-B00E-E5BF95200331}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
 		{1F547EB1-9109-41BE-B00E-E5BF95200331}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
 		{1F547EB1-9109-41BE-B00E-E5BF95200331}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal

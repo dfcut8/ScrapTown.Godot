@@ -1,6 +1,7 @@
 [gd_scene format=4 uid="uid://birh1df2vytag"]
 
 [ext_resource type="FontFile" uid="uid://ck78wbo5v4h4e" path="res://Assets/Fonts/retro-pixel-petty-5h.ttf" id="1_gk3b0"]
+[ext_resource type="Script" uid="uid://df5mxnxa3mmis" path="res://InputManager.cs" id="1_ltw0u"]
 [ext_resource type="Texture2D" uid="uid://2jm74jjso4uq" path="res://Assets/Textures/Tilesets/world.png" id="2_mp81a"]
 [ext_resource type="Texture2D" uid="uid://c5761x2ghclea" path="res://Assets/Textures/Tilesets/outside.png" id="3_ygus8"]
 [ext_resource type="Texture2D" uid="uid://dukdi12axw7cx" path="res://Assets/Textures/Tilesets/world_mod_half.png" id="4_l4vtk"]
@@ -1879,6 +1880,9 @@ sources/2 = SubResource("TileSetAtlasSource_ahfqg")
 sources/3 = SubResource("TileSetAtlasSource_wqrkm")
 
 [node name="Prototype3" type="Node2D" unique_id=2011430838]
+
+[node name="InputManager" type="Node2D" parent="." unique_id=38137373]
+script = ExtResource("1_ltw0u")
 
 [node name="Ui" type="CanvasLayer" parent="." unique_id=250175740]
 

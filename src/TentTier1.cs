@@ -7,13 +7,13 @@ public partial class TentTier1 : Node2D
 
     public override void _Ready()
     {
-
         area = GetNode<Area2D>("%Area2D");
         sprite = GetNode<Sprite2D>("%Sprite2D");
         area.MouseEntered += OnMouseEntered;
         area.MouseExited += OnMouseExited;
-        area.InputEvent += OnInputEvent;
+        //area.InputEvent += OnInputEvent;
     }
+
     public override void _Process(double delta) { }
 
     private void OnInputEvent(Node viewport, InputEvent @event, long shapeIdx)
