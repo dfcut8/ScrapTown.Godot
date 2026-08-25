@@ -55,3 +55,5 @@ I also think about using more older style ui as it was in KOEI games or in old D
 Agents to try:
 letsagents/godot-mcp
 hybridindie/godot-mcp
+
+I'm still thinking if I should switch to using agents for this project...
