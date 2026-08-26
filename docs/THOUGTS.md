@@ -57,3 +57,5 @@ letsagents/godot-mcp
 hybridindie/godot-mcp
 
 I'm still thinking if I should switch to using agents for this project...
+
+Pixel art lessons
