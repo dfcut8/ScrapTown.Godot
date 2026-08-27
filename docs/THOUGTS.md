@@ -1,5 +1,12 @@
 # Just Random thoughts
 
+## 2026-08-27 Refocusing
+
+Decided to re-focus on similar idea, but with more simple, easier main loop. Specific game reminds me of what I want to do:
+<https://www.youtube.com/watch?v=9w5B837s1gg>
+
+<https://poppants.itch.io/lost-settlers>
+
 ## Focus on main loop
 
 We start only with one building in the middle.
