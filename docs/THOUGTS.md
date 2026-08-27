@@ -7,6 +7,8 @@ Decided to re-focus on similar idea, but with more simple, easier main loop. Spe
 
 <https://poppants.itch.io/lost-settlers>
 
+Analyzing video to understand what I can do myself.
+
 ## Focus on main loop
 
 We start only with one building in the middle.
