@@ -1,5 +1,17 @@
 [gd_scene format=3 uid="uid://be45qwg6h1clq"]
 
 [ext_resource type="PackedScene" uid="uid://iy83e4ff1id2" path="res://Buildings/Building.tscn" id="1_mkuki"]
+[ext_resource type="Texture2D" uid="uid://8dmwj1hak3i" path="res://Assets/Textures/Tilesets/tileset-minimalistic-style-1bit.png" id="2_gwsds"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mkuki"]
+size = Vector2(11, 11)
 
 [node name="TentTierOne" unique_id=879076115 instance=ExtResource("1_mkuki")]
+
+[node name="CollisionShape2D" parent="MouseSelectionComponent" parent_id_path=PackedInt32Array(161946656) index="0" unique_id=744258749]
+position = Vector2(-0.5, -0.5)
+shape = SubResource("RectangleShape2D_mkuki")
+
+[node name="Sprite" parent="." index="1" unique_id=1424678100]
+texture = ExtResource("2_gwsds")
+region_rect = Rect2(64, 48, 16, 16)

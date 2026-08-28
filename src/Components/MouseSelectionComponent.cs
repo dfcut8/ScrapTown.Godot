@@ -10,5 +10,18 @@ public partial class MouseSelectionComponent : Area2D
     public override void _Ready()
     {
         Parent = GetParent<ISelectable>();
+        MouseEntered += OnMouseEntered;
+        MouseExited += OnMouseExited;
+    }
+
+    private void OnMouseExited()
+    {
+        Parent.ChangeColor(Colors.White);
+    }
+
+    private void OnMouseEntered()
+    {
+        GD.Print("D: OnMouseEntered");
+        Parent.ChangeColor(Colors.Red);
     }
 }

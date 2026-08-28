@@ -5,7 +5,12 @@ namespace ScrapTown.Godot.Buildings;
 
 public partial class Building : Node2D, ISelectable
 {
-    public override void _Ready() { }
+    private Sprite2D sprite;
+
+    public override void _Ready()
+    {
+        sprite = GetNode<Sprite2D>("Sprite");
+    }
 
     public override void _Process(double delta) { }
 
@@ -17,5 +22,10 @@ public partial class Building : Node2D, ISelectable
     public void Deselect()
     {
         GD.Print($"[Building] {Name}: Deselected");
+    }
+
+    public void ChangeColor(Color c)
+    {
+        sprite.Modulate = c;
     }
 }
