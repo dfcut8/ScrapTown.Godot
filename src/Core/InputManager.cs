@@ -20,7 +20,10 @@ public partial class InputManager : Node2D
                     Vector2 worldPosition = GetGlobalMousePosition();
                     GD.Print($"world position: {worldPosition}");
                     var selectedObject = GetSelectedUnit(worldPosition);
-                    selectedObject.Select();
+                    if (selectedObject is not null)
+                    {
+                        selectedObject.Select();
+                    }
                 }
             }
         }

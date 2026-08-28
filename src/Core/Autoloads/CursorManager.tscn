@@ -1,3 +1,8 @@
 [gd_scene format=3 uid="uid://5gty22tihoo7"]
 
-[node name="CursorManager" type="Node2D" unique_id=580586615]
+[ext_resource type="Script" uid="uid://c1g4sevywwbac" path="res://Core/Autoloads/CursorManager.cs" id="1_j7e3n"]
+[ext_resource type="Texture2D" uid="uid://sfxich7fqgyg" path="res://Cursors/Arrow/ArrowAtlas.tres" id="2_dv5rg"]
+
+[node name="CursorManager" type="Node" unique_id=320349653]
+script = ExtResource("1_j7e3n")
+arrowTexture = ExtResource("2_dv5rg")

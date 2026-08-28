@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" format=3 uid="uid://sfxich7fqgyg"]
+
+[ext_resource type="Texture2D" uid="uid://8dmwj1hak3i" path="res://Assets/Textures/Tilesets/tileset-minimalistic-style-1bit.png" id="1_xnmxd"]
+
+[resource]
+atlas = ExtResource("1_xnmxd")
+region = Rect2(48, 80, 16, 16)

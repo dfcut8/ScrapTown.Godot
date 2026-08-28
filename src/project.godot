@@ -15,6 +15,10 @@ run/main_scene="uid://vwyj085m8g7y"
 config/features=PackedStringArray("4.7", "C#", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+CursorManager="*uid://5gty22tihoo7"
+
 [display]
 
 window/size/viewport_width=320
@@ -25,6 +29,7 @@ window/size/window_width_override=1920
 window/size/window_height_override=1200
 window/stretch/mode="viewport"
 window/stretch/scale_mode="integer"
+mouse_cursor/custom_image="uid://b2msd87ecnmbd"
 
 [dotnet]
 

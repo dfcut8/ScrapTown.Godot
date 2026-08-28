@@ -2,5 +2,5 @@
 
 [ext_resource type="Script" uid="uid://df5mxnxa3mmis" path="res://Core/InputManager.cs" id="1_4jo8y"]
 
-[node name="InputManager" type="Node2D" unique_id=1326229888]
+[node name="InputManager" type="Node2D" unique_id=1628819143]
 script = ExtResource("1_4jo8y")
