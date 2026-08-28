@@ -24,6 +24,7 @@ Evolves from camp -> headquarters -> town hall -> capitol hall.
 
 Each stage have 3 upgrades, but the last one is basically winning the game:
 
+0. Just fire
 1. C1
 2. C2
 3. C3
