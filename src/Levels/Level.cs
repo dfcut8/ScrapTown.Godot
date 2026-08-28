@@ -1,9 +1,13 @@
 using Godot;
+using ScrapTown.Godot.Buildings;
 
 public partial class Level : Node2D
 {
     [Export]
     private Sprite2D highlightCursor;
+
+    [Export]
+    private PackedScene campScene;
 
     private TileMapLayer tileMap;
 
@@ -12,6 +16,11 @@ public partial class Level : Node2D
         tileMap = GetNode<TileMapLayer>("TileMap");
         highlightCursor = GetNode<Sprite2D>("HighlightCursor");
         highlightCursor.Visible = false;
+        var cellGlobalCoords = ToGlobal(tileMap.MapToLocal(new Vector2I(9, 5)));
+        tileMap.SetCell(new Vector2I(9, 5));
+        var camp = campScene.Instantiate<Building>();
+        camp.Position = cellGlobalCoords;
+        AddChild(camp);
     }
 
     public override void _Process(double delta)
