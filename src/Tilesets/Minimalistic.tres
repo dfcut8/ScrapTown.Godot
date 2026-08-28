@@ -1,0 +1,47 @@
+[gd_resource type="TileSet" format=3 uid="uid://bgj2ncl45renm"]
+
+[ext_resource type="Texture2D" uid="uid://8dmwj1hak3i" path="res://Assets/Textures/Tilesets/tileset-minimalistic-style-1bit.png" id="1_t42hs"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1x50l"]
+texture = ExtResource("1_t42hs")
+0:0/0 = 0
+1:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+
+[resource]
+sources/0 = SubResource("TileSetAtlasSource_1x50l")
